@@ -8,25 +8,20 @@ body{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    /* align-items: center; */
-    margin: auto 5px auto 5px;  
-    padding: 10px 50px 10px 30px 
     
 }
 
 form{
     padding: 1rem 12rem;
     /* background-color: lightpink; */
-    margin: 3rem 4rem 3rem 4rem;
-    border-radius: 2rem;
-    
-
+    margin: 3rem 4rem 3rem 4rem;  
 }
 
 input{
     padding: 12px 20px;
     margin: 8px 0;
     background-color:ivory
+
 }
 
 .form_input{
@@ -37,9 +32,13 @@ input{
 
 .agree_info{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+}
+
+.agreebox{
+    display: flex;
+    flex-direction: row;
 }
 
 .reg_word{
@@ -65,7 +64,6 @@ input{
     background-color: rgb(45, 145, 207);
     border-radius: 2rem;
     color: azure;
-    font-size: larger;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -82,7 +80,6 @@ input{
     background-color: rgb(15, 170, 15);
     border-radius: 2rem;
     color: azure;
-    font-size: larger;
 }
 
 .signIn_btn:active {
@@ -91,8 +88,28 @@ input{
     transform: translateY(2px);
 }
 
+
 footer {
     margin-top: 3rem;
     font-size: small;
     border-style: double none none;
+}
+
+@media only screen and (max-width: 800px)  {
+    /* For tablets: */
+    input{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media only screen and (max-width: 450px) {
+    /* For mobile: */
+    
+    form{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
 }
